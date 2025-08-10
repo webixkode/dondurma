@@ -1,0 +1,62 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #fef9f4; /* krem arka plan */
+  color: #4b3b2b; /* koyu kahve */
+}
+
+header {
+  background-color: #8b5e3c; /* ahşap kahvesi */
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f4e9d8; /* açık krem */
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  box-shadow: 0 3px 10px rgba(139, 94, 60, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'Pacifico', cursive;
+}
+
+.logo {
+  cursor: default;
+  font-size: 1.8em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu li a {
+  color: #f4e9d8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background-color: #a67c52; /* açık kahve */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: 
+    background-color 0.3s ease, 
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.menu li a:hover {
+  background-color: #d3b785; /* açık altın ton */
+  color: #4b3b2b; /* koyu kahve */
+  box-shadow: 0 5px 15px rgba(211, 183, 133, 0.7);
+  transform: scale(1.1);
+}
