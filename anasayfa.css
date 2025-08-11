@@ -60,3 +60,71 @@ header {
   box-shadow: 0 5px 15px rgba(211, 183, 133, 0.7);
   transform: scale(1.1);
 }
+
+.hero-banner {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  animation: bgChange 30s infinite;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  background-color: #a67c52;
+  color: #f4e9d8;
+  padding: 14px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #d3b785;
+  color: #4b3b2b;
+  transform: scale(1.05);
+}
+
+/* Arka plan geçişleri */
+@keyframes bgChange {
+  0%   { background-image: url('./resimler/labne_peynirli_cilekli_dondurma-6711ac36-4100-4387-99ad-67a8c8f9086c.jpg'); }
+  16%  { background-image: url('./resimler/labne_peynirli_cilekli_dondurma-6711ac36-4100-4387-99ad-67a8c8f9086c.jpg'); }
+  32%  { background-image: url('./resimler/cerealmilkicecream.jpg'); }
+  48%  { background-image: url('./resimler/shutterstock_584691958.webp'); }
+  64%  { background-image: url('./resimler/ega3-listing.jpg'); }
+  80%  { background-image: url('./resimler/hindistan-cevizli.jpg'); }
+  100% { background-image: url('./resimler/turk-kahveli-dondurma.jpg'); }
+}
