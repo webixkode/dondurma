@@ -193,3 +193,98 @@ header {
     max-width: 400px;
   }
 }
+
+#about-us {
+  font-family: 'Roboto', sans-serif;
+  margin: 60px auto;
+  padding: 50px;
+  max-width: 1100px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about-us:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+#about-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(90deg, #FF6347, #FF8C00);
+  border-radius: 5px 5px 0 0;
+}
+
+#about-us h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+#about-us p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+#about-us p:last-child {
+  margin-bottom: 0;
+}
+
+#about-us p:hover {
+  opacity: 1;
+}
+
+#about-us .highlight {
+  color: #FF6347; /* Dondurmanın taze rengi */
+  font-weight: 600;
+}
+
+#about-us h2,
+#about-us p {
+  transition: all 0.3s ease;
+}
+
+#about-us:hover h2 {
+  color: #FF6347; /* Başlık hoverda renk değişir */
+}
+
+#about-us:hover p {
+  color: #333;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  #about-us {
+    padding: 30px;
+    margin: 20px;
+  }
+
+  #about-us h2 {
+    font-size: 28px;
+  }
+
+  #about-us p {
+    font-size: 16px;
+  }
+}
