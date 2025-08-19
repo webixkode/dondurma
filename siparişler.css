@@ -1,10 +1,3 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  background: #fef9f4; /* krem arka plan */
-  color: #4b3b2b; /* koyu kahve */
-}
-
 header {
   background-color: #8b5e3c; /* ahşap kahvesi */
   padding: 15px 40px;
@@ -61,6 +54,123 @@ header {
   transform: scale(1.1);
 }
 
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-top: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    margin-top: 5px;
+}
+
+.summary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+.summary h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.order-btn {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+button.order-btn:hover {
+    background-color: #4cae4c;
+}
+
+button.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    margin-top: 20px;
+}
+
+button.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+button.call-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+button.call-btn:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -98,84 +208,4 @@ footer p {
     margin-top: 20px;
     font-size: 14px;
     color: #ccc;
-}
-
-.hakkimizda {
-    background-color: #fff;
-    padding: 60px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h1 {
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.8;
-    max-width: 900px;
-    margin: 0 auto 30px;
-}
-
-.mission-vision {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.mission, .vision {
-    width: 45%;
-    text-align: left;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.mission h2, .vision h2 {
-    font-size: 2rem;
-    color: #ff6347; /* Dondurma dükkanı için sıcak, canlı renk */
-    margin-bottom: 15px;
-}
-
-.mission p, .vision p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.6;
-}
-
-.our-journey {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.our-history, .future-goals {
-    width: 45%;
-    text-align: left;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.our-history h2, .future-goals h2 {
-    font-size: 2rem;
-    color: #ff6347; /* Sıcak, canlı renk */
-    margin-bottom: 15px;
-}
-
-.our-history p, .future-goals p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.6;
 }
